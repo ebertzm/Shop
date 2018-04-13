@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package warengruppen;
 
-/**
- *
- * @author CC-Student
- */
 public class Cooling {
-    
+
+    private String hersteller;
+    private String typ;
+    private int groesse;
+    private int anzahlAufLager;
+
+    public Cooling(String hersteller, String typ, int groesse, int anzahlAufLager) {
+        this.hersteller = hersteller;
+        this.typ = typ;
+        this.groesse = groesse;
+        this.anzahlAufLager = anzahlAufLager;
+
+    }
+
 }
