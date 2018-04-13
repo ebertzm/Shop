@@ -4,7 +4,7 @@ package warengruppen;
  *
  * @author CC-Student
  */
-public class Waren extends Warengruppen {
+public class Waren {
     protected int anzahlLager;
     public void verkaufen(){
         anzahlLager--;

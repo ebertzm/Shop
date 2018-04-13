@@ -1,6 +1,7 @@
 package shop;
 
 import java.util.Arrays;
+import java.util.Map;
 import java.util.Scanner;
 import kunden.Kunden;
 import warengruppen.Warengruppen;
@@ -34,11 +35,21 @@ public class Shop {
 
                 if (produktWahl == 1) {
 
-                    String[] warengruppen = {"1 CPU","2 Cases","3 Cooling", "4 HDD", "5 Mainboard","6 Power", "7 RAM"};
+                    //String[] warengruppen = {"1 CPU","2 Cases","3 Cooling", "4 HDD", "5 Mainboard","6 Power", "7 RAM"};
                     // String[][] warengruppe2 = {{"Intel", "AMD"}, {"DDR3", "DDR4"}, {"HDD", "SSD"}, {"Ryzen", "i7"}, {"128GB", "256GB"}, {"8GB", "16GB", "32GB"}};
 
-                    System.out.println( Arrays.toString(warengruppen));
-                    System.out.println("wähle eine Produktgruppe:");
+                    //System.out.println( Arrays.toString(warengruppen));
+                    //System.out.println("wähle eine Produktgruppe: "+ Map.toString(Id,(waren)));
+                                        //for(Map.<String,Map> m : kundeHatGewaehlt.getWaren()){
+                    Warengruppen kundeHatGewaehlt = new Warengruppen();  
+                    for(int i=0;i<kundeHatGewaehlt.getWaren().size();i++ ){
+                        Map m = kundeHatGewaehlt.getWaren().get("ID "+(i+1));
+                        System.out.println("Map: "+m.);
+                    }
+                        
+                        
+                        
+                    int Auswahl = eingabe.nextInt();
 
                 } else {
                     if (produktWahl == 2) {
@@ -49,5 +60,8 @@ public class Shop {
 
             }
         }
+    }
+
+    public Shop() {
     }
 }

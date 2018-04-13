@@ -1,25 +1,22 @@
 
 package warengruppen;
 
+import java.util.HashMap;
+import java.util.Map;
 
 
-public class CPU{
+public class Cases{
     
     private String hersteller;
         private String typ;
-        private String sockel;
-        private int takt;
+        private String format;
         private int anzahlAufLager;
 
-    public CPU(String hersteller, String typ, String sockel, int takt, int anzahlAufLager) {
+    public Cases(String hersteller, String typ, String format, int anzahlAufLager) {
         this.hersteller = hersteller;
         this.typ = typ;
-        this.sockel = sockel;
-        this.takt = takt;
+        this.format = format;
         this.anzahlAufLager = anzahlAufLager;
     }
-    
-    
-    
-    
+   
 }

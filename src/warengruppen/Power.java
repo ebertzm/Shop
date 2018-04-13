@@ -1,14 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package warengruppen;
 
-/**
- *
- * @author CC-Student
- */
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class Power {
+    
+    private String hersteller;
+    
+    private String typ;
+    
+    private int leistung;
+
+    public Power(String hersteller, String typ, int leistung) {
+        this.hersteller = hersteller;
+        this.typ = typ;
+        this.leistung = leistung;
+    }
+    
+    
     
 }

@@ -1,14 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package warengruppen;
 
-/**
- *
- * @author CC-Student
- */
+
+
 public class HDD {
+    
+    private String hersteller;
+    private String typ;
+    private String groesse;
+
+    public HDD(String hersteller, String typ, String groesse) {
+        this.hersteller = hersteller;
+        this.typ = typ;
+        this.groesse = groesse;
+    }
+    
+    
     
 }

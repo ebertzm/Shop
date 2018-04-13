@@ -1,43 +1,49 @@
 package warengruppen;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
+public class Warengruppen {
+    
+private Map<String, Map> waren = new HashMap<>();
+public Map<String, Map> getWaren(){
+    return waren;
+}
+    public Warengruppen() {
+
         
-public class Warengruppen{
-   
-   
-    public void waren() {
-       
-    
-    
+        Map<String, Cases> cases = new HashMap<>();
 
-    Collection waren = new ArrayList();
-    Collection cases = new ArrayList();
-    waren.add (cases);
-    Collection cpu = new ArrayList();
-    waren.add (cpu);
-    Collection cooling = new ArrayList();
-    waren.add (cooling);
-    Collection hdd = new ArrayList();
-    waren.add (hdd);
-    Collection mainboard = new ArrayList();
-    waren.add(mainboard);
-    Collection power = new ArrayList();
-    waren.add (power);
-    Collection ram = new ArrayList();
-    waren.add (ram);
-     
-    System.out.println("waren hat aktuell: "+waren.size()+" Elemente");
+        cases.put("ID 1", new Cases("hersteller", "typ", "format", 1));
+        waren.put("ID 1", cases);
 
-     }
+        Map<String, CPU> cpu = new HashMap<>();
+        cpu.put("ID 1", new CPU("hersteller","typ","Sockel",1800,1));
+        waren.put("ID 2", cpu);
 
-    
+        Map<String, Cooling> cooling = new HashMap<>();
+        cooling.put("ID 3", new Cooling("hersteller","Typ",80,1));
+        
+        
+        Map<String,HDD> hdd = new HashMap<>();
+        
+        Map<String,Mainboards> mainboard = new HashMap<>();
+        
+        Map<String,Power> power = new HashMap<>();
+        
+         Map<String,RAM> ram = new HashMap<>();
+        
+        public Map<String, waren
+
+        System.out.println("waren hat aktuell: " + waren.size() + " Elemente");
+
+    }
    
+
     public void bestellen(int id) {
         Scanner eingabe = new Scanner(System.in);
-    
+
         int kundeHatGewaehlt = eingabe.nextInt();
         switch (id) {
             case 1: {
@@ -66,6 +72,6 @@ public class Warengruppen{
                 //Vieleicht boolean ändern daftKontaktiert werden
                 break;
             }
-      }
-   }
+        }
+    }
 }
